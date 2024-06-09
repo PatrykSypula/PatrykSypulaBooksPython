@@ -1,0 +1,14 @@
+-- Creating database "biblioteka"
+CREATE DATABASE biblioteka;
+
+-- Using database "biblioteka"
+\c biblioteka;
+
+-- Creating table "ksiazki"
+CREATE TABLE ksiazki (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(255),
+    author VARCHAR(255),
+    releaseDate INT,
+    isbn VARCHAR(20)
+);
